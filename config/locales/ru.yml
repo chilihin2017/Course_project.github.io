@@ -1,0 +1,16 @@
+ru:
+  common:
+    errors: 'При заполнении формы возникли ошибки'
+    back: 'Назад'
+  will_paginate:
+    next_label: 'Вперед'
+    previous_label: 'Назад'
+  books:
+    index:
+      title: 'Книги'
+    edit:
+      title: 'Редактирование книги'
+    new:
+      title: 'Новая книга'
+    form:
+      submit: '%{action} книгу'

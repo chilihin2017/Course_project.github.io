@@ -1,0 +1,13 @@
+<div class="col-md-3 book clearfix">
+  <%=image_tag book.image_url(:thumb), class:'img-thumbnail img-show' if book.image? %>
+  <div class="book-summary">
+    <small class="float-left">
+      <p> <%=book.title%></p>
+    </small>
+    <%= link_to 'Подробнее',book, class:'btn btn-info btn-sm float-right next'%>
+  </div>
+</div>
+
+
+
+

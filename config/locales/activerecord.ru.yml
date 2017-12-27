@@ -1,0 +1,13 @@
+ru:
+  activerecord:
+    models:
+      book: 'Книга'
+    attributes:
+      book:
+        title: 'Название книги'
+        body: 'Описание книги'
+        image: 'Изображение'
+        file: 'Файл'
+    errors:
+      messages:
+        blank: 'не может быть пустым'

@@ -1,0 +1,28 @@
+<div class="book-show clearfix">
+  <div class="row">
+    <div class="col-md-12 title">
+      <h2><%= @book.title %></h2>
+    </div>
+    <div class="col-md-12 setting">
+      <%= link_to 'Удалить', book_path(@book), method: :delete, data: {confirm: 'Вы уверены?'},class: 'setting-item btn btn-danger float-right' %>
+      <%= link_to 'Изменить', edit_book_path(@book), class: 'setting-item btn btn-warning float-right' %>
+
+    </div>
+    <div class="col-md-6 img">
+      <%= image_tag @book.image_url(:large),class:'img-thumbnail img-show'  %>
+    </div>
+    <div class="col-md-6 bdy">
+        <div class="bdy-item">Автор:  </div>
+      <div class ="body bdy-item">
+          <div class="title float-left">
+            Аннотация
+          </div>
+          <%= @book.body.html_safe%>
+      </div>
+        <%= link_to 'Скачать книгу' , @file_path, class: 'btn btn-info float-right'  %>
+    </div>
+  </div>
+
+
+
+</div>

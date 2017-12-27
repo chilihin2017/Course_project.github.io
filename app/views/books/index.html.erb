@@ -1,0 +1,8 @@
+<h1><%= t('.title')%></h1>
+<div class="row">
+  <%= render @books %>
+</div>
+
+<%= will_paginate @books, renderer: 'BootstrapPaginationHelper::LinkRenderer'%>
+
+
